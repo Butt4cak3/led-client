@@ -1,5 +1,7 @@
+const WS_URL = "ws://rp-led02:8765";
+
 document.addEventListener("DOMContentLoaded", () => {
-	const connection = new WebSocket("ws://rp-led02:8765");
+	const connection = new WebSocket(WS_URL);
 
 	const el_red = document.getElementById("red") as HTMLInputElement;
 	const el_green = document.getElementById("green") as HTMLInputElement;
