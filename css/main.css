@@ -5,28 +5,47 @@ html, body {
 	padding: 0;
 }
 
-@media (max-width: 500px) {
-	.sliders {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: stretch;
-	}
+body {
+	background-color: #DDDDDD;
+}
 
-	.sliders>div {
-		padding: 5% 0;
-	}
+h1 {
+	margin: 0 1em;
+}
 
-	.sliders input[type=range] {
-		writing-mode: bt-lr;
-		-webkit-appearance: slider-vertical;
-		width: 8px;
-		height: 100%;
-		padding: 0 5px;
-		margin: 0;
-	}
+.content {
+	padding: 0.5em 0;
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+.formitem {
+	display: flex;
+	flex-direction: row;
+	padding: 0.5em;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #999999;
+}
+
+.formitem:first-child {
+	border-top: 1px solid #999999;
+}
+
+.formitem label {
+	flex-basis: 100px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.formitem .input {
+	flex-basis: 250px;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.formitem .input>* {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }

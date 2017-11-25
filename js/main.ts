@@ -44,24 +44,3 @@ document.addEventListener("DOMContentLoaded", () => {
 	el_blue.addEventListener("input", onInput);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-	window.addEventListener("resize", () => {
-		let inputs = document.getElementsByTagName("input") as NodeListOf<HTMLInputElement>;
-
-		if (document.body.offsetWidth <= 500) {
-			for (let i = 0; i < inputs.length; i++) {
-				let input = inputs[i];
-				if (input.type === "range") {
-					input.setAttribute("orient", "vertical");
-				}
-			}
-		} else {
-			for (let i = 0; i < inputs.length; i++) {
-				let input = inputs[i];
-				if (input.type === "range") {
-					input.removeAttribute("orient");
-				}
-			}
-		}
-	});
-});

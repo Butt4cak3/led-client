@@ -8,25 +8,46 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="sliders">
-		<div>
-			<input
-				id="red"
-				type="range"
-				min="0" max="100" step="1" value="0">
+<div class="content">
+	<h1>LED Control</h1>
+	<form>
+		<div class="formitem">
+			<label for="red">Red</label>
+			<div class="input">
+				<input
+					id="red"
+					type="range"
+					min="0" max="100" step="1" value="0">
+			</div>
 		</div>
-		<div>
-			<input
-				id="green"
-				type="range"
-				min="0" max="100" step="1" value="0">
+		<div class="formitem">
+			<label for="green">Green</label>
+			<div class="input">
+				<input
+					id="green"
+					type="range"
+					min="0" max="100" step="1" value="0">
+			</div>
 		</div>
-		<div>
-			<input
-				id="blue"
-				type="range"
-				min="0" max="100" step="1" value="0">
+		<div class="formitem">
+			<label for="blue">Green</label>
+			<div class="input">
+				<input
+					id="blue"
+					type="range"
+					min="0" max="100" step="1" value="0">
+			</div>
 		</div>
-	</div>
+		<div class="formitem">
+			<label for="mode">Mode</label>
+			<div class="input">
+				<select id="mode">
+					<option id="1">Solid color</option>
+					<option id="2">Flashing</option>
+				</select>
+			</div>
+		</div>
+	</form>
+</div>
 </body>
 </html>
